@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Órbita — O melhor café sob as estrelas</title>
+  <meta name="description" content="Café Órbita: experiências únicas de café especial em um ambiente aconchegante e inspirado no cosmos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#hero" class="logo" aria-label="Café Órbita — Início">
+        <span class="logo__icon" aria-hidden="true">☕</span>
+        <span class="logo__text">Café <em>Órbita</em></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#hero"     class="nav__link" data-section="hero">Início</a></li>
+          <li><a href="#cardapio" class="nav__link" data-section="cardapio">Cardápio</a></li>
+          <li><a href="#sobre"    class="nav__link" data-section="sobre">Sobre</a></li>
+          <li><a href="#footer"   class="nav__link nav__link--cta" data-section="footer">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content container">
+      <p class="hero__eyebrow fade-in">Café Especial &amp; Experiências</p>
+      <h1 class="hero__title fade-in">Café <em>Órbita</em></h1>
+      <p class="hero__subtitle fade-in">Onde cada xícara é uma viagem ao cosmos.<br />Grãos de origem única, torrados com paixão.</p>
+      <a href="#cardapio" class="btn btn--primary fade-in">Ver cardápio</a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="hero__scroll-dot"></span>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="cardapio section" id="cardapio">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-tag">Nosso Cardápio</p>
+        <h2 class="section-title">Escolha sua órbita favorita</h2>
+        <p class="section-desc">Cafés selecionados de 12 origens diferentes, preparados com técnica e dedicação para cada perfil de paladar.</p>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card fade-in">
+          <div class="card__badge">Clássico</div>
+          <div class="card__icon" aria-hidden="true">☕</div>
+          <h3 class="card__name">Espresso</h3>
+          <p class="card__desc">A base de tudo. Blend exclusivo com notas de chocolate amargo e caramelo, encorpado e persistente.</p>
+          <ul class="card__details">
+            <li>Dose simples (30 ml)</li>
+            <li>Blend Sul-Americano</li>
+            <li>Torra média-escura</li>
+          </ul>
+          <div class="card__footer">
+            <span class="card__price">R$&nbsp;8,90</span>
+            <button class="btn btn--secondary" type="button">Pedir</button>
+          </div>
+        </article>
+
+        <article class="card card--featured fade-in">
+          <div class="card__badge card__badge--featured">Popular</div>
+          <div class="card__icon" aria-hidden="true">🌙</div>
+          <h3 class="card__name">Cappuccino</h3>
+          <p class="card__desc">Espresso duplo com leite vaporizado aveludado e uma camada generosa de espuma densa. Perfeito pela manhã.</p>
+          <ul class="card__details">
+            <li>180 ml</li>
+            <li>Leite integral A2</li>
+            <li>Canela a pedido</li>
+          </ul>
+          <div class="card__footer">
+            <span class="card__price">R$&nbsp;14,90</span>
+            <button class="btn btn--primary" type="button">Pedir</button>
+          </div>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card__badge card__badge--new">Novo</div>
+          <div class="card__icon" aria-hidden="true">🌌</div>
+          <h3 class="card__name">Cold Brew</h3>
+          <p class="card__desc">Extração a frio por 18 horas com grão de altitude da Etiópia. Suave, frutado e refrescante.</p>
+          <ul class="card__details">
+            <li>300 ml com gelo</li>
+            <li>Single Origin Etiópia</li>
+            <li>Torra clara</li>
+          </ul>
+          <div class="card__footer">
+            <span class="card__price">R$&nbsp;16,90</span>
+            <button class="btn btn--secondary" type="button">Pedir</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre section" id="sobre">
+    <div class="container sobre__inner">
+      <div class="sobre__text fade-in">
+        <p class="section-tag">Nossa História</p>
+        <h2 class="section-title">Mais do que café,<br /><em>uma experiência</em></h2>
+        <p>Fundado em 2018, o Café Órbita nasceu da obsessão por transformar o ritual do café em algo memorável. Acreditamos que um bom café não começa na xícara — começa na planta, passa pelas mãos do produtor e chega até você com toda a sua história preservada.</p>
+        <p>Trabalhamos diretamente com pequenos produtores de 12 origens diferentes, garantindo rastreabilidade completa e pagamento justo. Nossa torra artesanal é feita em lotes pequenos, duas vezes por semana, para que cada grão chegue à sua xícara no auge do frescor.</p>
+        <a href="#footer" class="btn btn--outline">Fale conosco</a>
+      </div>
+      <div class="sobre__stats fade-in" aria-label="Números do Café Órbita">
+        <div class="stat">
+          <span class="stat__number" data-target="5000">0</span>
+          <span class="stat__unit">+</span>
+          <p class="stat__label">xícaras por mês</p>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="12">0</span>
+          <span class="stat__unit"></span>
+          <p class="stat__label">origens de café</p>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="98">0</span>
+          <span class="stat__unit">%</span>
+          <p class="stat__label">clientes satisfeitos</p>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="7">0</span>
+          <span class="stat__unit">+</span>
+          <p class="stat__label">anos de história</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--light" aria-label="Café Órbita">
+          <span class="logo__icon" aria-hidden="true">☕</span>
+          <span class="logo__text">Café <em>Órbita</em></span>
+        </a>
+        <p>Grãos de origem única,<br />torrados com paixão.</p>
+      </div>
+      <div class="footer__info">
+        <h3>Horário de Funcionamento</h3>
+        <ul class="footer__hours">
+          <li><span>Seg — Sex</span><span>7h – 20h</span></li>
+          <li><span>Sábado</span><span>8h – 18h</span></li>
+          <li><span>Domingo</span><span>9h – 15h</span></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Contato &amp; Endereço</h3>
+        <address>
+          <p>📍 Rua das Constelações, 42<br />Vila Astral — São Paulo/SP</p>
+          <p>📞 <a href="tel:+5511999990042">(11) 9 9999-0042</a></p>
+          <p>✉️ <a href="mailto:oi@cafeorbita.com.br">oi@cafeorbita.com.br</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Café Órbita — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
