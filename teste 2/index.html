@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCoding — Code by Feeling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">VibeCoding</span>
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#features">Recursos</a>
+        <a href="#how">Como Funciona</a>
+        <a href="#community">Comunidade</a>
+        <a href="#pricing">Preços</a>
+        <a href="#about">Sobre</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="#" class="btn btn--ghost">Entrar</a>
+        <a href="#hero-prompt" class="btn btn--primary">Começar</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__blobs">
+      <div class="blob blob--pink"></div>
+      <div class="blob blob--blue"></div>
+      <div class="blob blob--purple"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">IA × Flow State × Código</div>
+      <h1 class="hero__title">Code pelo <span class="gradient-text">feeling</span></h1>
+      <p class="hero__subtitle">
+        Transforme intuição em software. VibeCoding une IA generativa ao seu estado de fluxo
+        para criar aplicações incríveis sem fricção.
+      </p>
+      <div class="hero__prompt" id="hero-prompt">
+        <div class="prompt-box">
+          <span class="prompt-icon">✦</span>
+          <input
+            type="text"
+            class="prompt-input"
+            id="promptInput"
+            placeholder="Descreva o que você quer criar com VibeCoding..."
+            autocomplete="off"
+          />
+          <button class="prompt-submit" id="promptSubmit">Gerar</button>
+        </div>
+        <p class="prompt-hint">Ex: "um dashboard de métricas em tempo real com gráficos animados"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof">
+    <div class="container">
+      <p class="social-proof__label">Usado por devs em todo o mundo</p>
+      <div class="social-proof__stats">
+        <div class="stat">
+          <span class="stat__number">50k+</span>
+          <span class="stat__label">Devs no flow</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number">120k+</span>
+          <span class="stat__label">Projetos gerados</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number">98%</span>
+          <span class="stat__label">Satisfação</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number">10x</span>
+          <span class="stat__label">Mais rápido</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recursos</span>
+        <h2 class="section-title">Tudo que você precisa para entrar no <span class="gradient-text">flow</span></h2>
+        <p class="section-subtitle">Ferramentas pensadas para devs que codificam pelo feeling</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">🧠</div>
+          <h3>IA no seu ritmo</h3>
+          <p>Nossa IA aprende seu estilo de codificação e antecipa o que você quer criar antes mesmo de você terminar de digitar.</p>
+        </div>
+        <div class="feature-card feature-card--glow">
+          <div class="feature-card__icon">⚡</div>
+          <h3>Zero fricção</h3>
+          <p>Do prompt ao deploy em minutos. Sem configuração, sem boilerplate — só você e seu projeto em estado puro de criação.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🎵</div>
+          <h3>Flow State Mode</h3>
+          <p>Interface adaptativa que minimiza distrações quando você está no flow. Modo escuro, sons ambientes e foco total.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🌐</div>
+          <h3>Deploy instantâneo</h3>
+          <p>Publique sua criação em um clique. Infraestrutura gerenciada, CDN global e HTTPS automático inclusos.</p>
+        </div>
+        <div class="feature-card feature-card--glow">
+          <div class="feature-card__icon">🔮</div>
+          <h3>Intuição amplificada</h3>
+          <p>Descreva em linguagem natural. A IA traduz sua visão em código limpo, semântico e performático.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🤝</div>
+          <h3>Colaboração em tempo real</h3>
+          <p>Programe em par com a IA ou convide humanos. Edição simultânea com sync instantâneo e controle de versão nativo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Como funciona</span>
+        <h2 class="section-title">Três passos para o <span class="gradient-text">flow</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">01</div>
+          <div class="step__content">
+            <h3>Sinta a ideia</h3>
+            <p>Descreva o que você quer criar com suas próprias palavras. Não precisa ser técnico — só precisa ser autêntico.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <div class="step__content">
+            <h3>IA gera o código</h3>
+            <p>Nossa IA interpreta seu feeling e produz código limpo, funcional e pronto para produção em segundos.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <div class="step__content">
+            <h3>Publique e itera</h3>
+            <p>Deploy com um clique. Continue refinando em conversação natural. O flow nunca para.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="pricing">
+    <div class="cta__blobs">
+      <div class="blob blob--cta-pink"></div>
+      <div class="blob blob--cta-blue"></div>
+    </div>
+    <div class="container">
+      <div class="cta__content">
+        <h2 class="cta__title">Pronto para entrar no <span class="gradient-text">flow</span>?</h2>
+        <p class="cta__subtitle">Comece de graça. Sem cartão de crédito. Sinta a diferença do vibecoding.</p>
+        <div class="cta__buttons">
+          <a href="#hero-prompt" class="btn btn--primary btn--lg">Começar grátis</a>
+          <a href="#how" class="btn btn--outline btn--lg">Ver demonstração</a>
+        </div>
+        <p class="cta__note">✓ 14 dias grátis &nbsp;&nbsp; ✓ Cancele a qualquer hora &nbsp;&nbsp; ✓ Suporte 24/7</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="about">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">VibeCoding</span>
+          </a>
+          <p>Code pelo feeling. Crie sem limites.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Twitter/X">𝕏</a>
+            <a href="#" aria-label="GitHub">⌨</a>
+            <a href="#" aria-label="Discord">◈</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Produto</h4>
+            <a href="#">Recursos</a>
+            <a href="#">Preços</a>
+            <a href="#">Changelog</a>
+            <a href="#">Roadmap</a>
+          </div>
+          <div class="footer__col">
+            <h4>Empresa</h4>
+            <a href="#">Sobre</a>
+            <a href="#">Blog</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Contato</a>
+          </div>
+          <div class="footer__col">
+            <h4>Legal</h4>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 VibeCoding. Todos os direitos reservados.</p>
+        <p>Feito com ⚡ e muito flow state</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
